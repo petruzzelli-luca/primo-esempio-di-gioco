@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gioco di Animazione</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <style>
+    /* Aggiungi qui lo stile per il canvas, se necessario */
+    body {
+      text-align: center;
+    }
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body>
-  <canvas id="mycanvas" width="600" height="600"></canvas>
-  
-<button onclick="su()">su</button><br />
-<button onclick="sinistra()">sinistra</button>
-<button onclick="destra()">destra</button><br />
-<button onclick="giù()">giù</button><br />
-<br />
 
+  <canvas id="mycanvas" width="600" height="600" > </canvas>
   
+  <button onclick="moveUp()">Su</button><br />
+  <button onclick="moveLeft()">Sinistra</button>
+  <button onclick="moveRight()">Destra</button><br />
+  <button onclick="moveDown()">Giù</button><br />
+  
+  <script src="script.js"></script>
 </body>
 </html>
